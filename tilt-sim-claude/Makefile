@@ -5,8 +5,11 @@ SHELL := /bin/sh
 build:
 	swift build -c release
 
-run:
+run: build
 	sudo .build/release/TiltSim
+
+run-no-tilt: build
+	.build/release/TiltSim
 
 clean:
 	swift package clean
