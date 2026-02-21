@@ -16,9 +16,9 @@ cd tilt-sim-experiment/tilt-sim-claude
 make run
 ```
 
-That's it. `make run` builds and launches with `sudo` (needed for accelerometer access via IOKit HID).
+That's it. `make run` builds and launches the app. Tilt control works automatically on Apple Silicon MacBooks.
 
-> **No MacBook?** Run `make run-no-tilt` instead — plays with static gravity, no sudo required. Works on any Mac.
+> **No MacBook?** The app still works — gravity just always points down.
 
 ### Requirements
 
@@ -62,7 +62,7 @@ Apple Silicon MacBooks have a built-in accelerometer (`AppleSPUHIDDevice`). The 
 
 The gravity indicator in the top-right corner shows a dot representing the current tilt vector.
 
-Root access is required because the HID device isn't exposed through any public macOS API — the app opens the raw IOKit service directly.
+No special permissions required — the IOKit HID service is accessible without root.
 
 ## Architecture
 
