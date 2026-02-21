@@ -6,7 +6,9 @@ Built in Swift with zero dependencies. Reads the Apple Silicon accelerometer dir
 
 12 elements (sand, water, lava, gunpowder, acid, ...) interact with each other — fire ignites wood and oil, lava solidifies on water contact, gunpowder chain-explodes, acid dissolves everything. Tilt your MacBook and watch it all flow.
 
-https://github.com/user-attachments/assets/PLACEHOLDER
+<p align="center">
+  <img src="demo.gif" alt="TiltSim demo — tilting MacBook to control gravity" width="600">
+</p>
 
 ## Quick Start
 
