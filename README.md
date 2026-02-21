@@ -66,6 +66,24 @@ The gravity indicator in the top-right corner shows a dot representing the curre
 
 No special permissions required — the IOKit HID service is accessible without root.
 
+## How This Was Made
+
+The code in `tilt-sim-claude/` was generated in a single shot by [Claude Code](https://claude.ai/claude-code) (Opus 4.6), using only [`SOURCE.md`](SOURCE.md) as input — a detailed spec describing the simulation rules, element interactions, rendering approach, and accelerometer integration. No manual editing afterward.
+
+## Regenerate It Yourself
+
+The real source code is [`SOURCE.md`](SOURCE.md). The Swift files are just one possible output.
+
+Feed `SOURCE.md` to any AI model and ask it to generate the application:
+
+```
+Given this spec, generate a complete macOS Swift Package Manager application.
+```
+
+Future models will likely produce a better version than what's here today. The spec encodes the intent; the code is disposable.
+
+For more on this idea, see [Backwards Compatible for Life](https://kevin.md/backwards-compatible-for-life.md) — on why specs and tests outlast implementations.
+
 ## Architecture
 
 ~1,500 lines of Swift across 10 files. No Xcode project — just Swift Package Manager.
